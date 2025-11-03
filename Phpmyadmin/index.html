@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Phpmyadmin - Fran phpmyadmin</title>
+    <title>Pràctica - Fran phpmyadmin</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Phpmyadmin";
+        var mkdocs_page_name = "Pr\u00e0ctica";
         var mkdocs_page_input_path = "Phpmyadmin.md";
         var mkdocs_page_url = null;
       </script>
@@ -39,8 +39,46 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="" href="../docs/phpmyadmin.md">Pràctica</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Pràctica</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installacio-de-phpmyadmin">Instal·lació de PhpMyAdmin</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installa-phpmyadmin-juntament-amb-les-extensions-php-necessaries-php-mbstring-php-zip-php-gd-php-json-php-curl">Instal·la phpMyAdmin juntament amb les extensions PHP necessàries (php-mbstring, php-zip, php-gd, php-json, php-curl).</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#configura-phpmyadmin-perque-funcione-amb-nginx">Configura phpMyAdmin perquè funcione amb nginx.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#permetre-lacces-per-contrasenya-del-root-de-mysql">Permetre l’Accés per Contrasenya del root de MySQL</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#canvia-el-metode-dautenticacio-de-lusuari-root-de-mysql-dauth_socket-a-caching_sha2_password-o-mysql_native_password">Canvia el mètode d’autenticació de l’usuari root de MySQL d’auth_socket a caching_sha2_password o mysql_native_password.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#verifica-els-metodes-dautenticacio-utilitzats-per-cadascun-dels-usuaris">Verifica els mètodes d’autenticació utilitzats per cadascun dels usuaris.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuracio-de-lacces-per-contrasenya-per-a-un-usuari-dedicat-de-mysql">Configuració de l’Accés per Contrasenya per a un Usuari Dedicat de MySQL</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#crea-un-nou-usuari-de-mysql-amb-una-contrasenya-segura">Crea un nou usuari de MySQL amb una contrasenya segura.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#dona-li-al-usuari-els-privilegis-apropiats-per-gestionar-les-bases-de-dades-a-traves-de-phpmyadmin">Dona-li al usuari els privilegis apropiats per gestionar les bases de dades a través de phpMyAdmin.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#assegura-la-instancia-de-phpmyadmin">Assegura la Instància de phpMyAdmin</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#crea-un-fitxer-htpasswd-per-emmagatzemar-les-credencials-dusuari-i-contrasenya">Crea un fitxer .htpasswd per emmagatzemar les credencials d’usuari i contrasenya.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modifica-la-configuracio-del-lloc-per-aplicar-lacces-per-usuari-i-contrassenya">Modifica la configuració del lloc per aplicar l’accés per usuari i contrassenya.</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reinicieu-nginx-per-aplicar-els-canvis">Reinicieu nginx per aplicar els canvis.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#repositori-de-github-github-pages">Repositori de GitHub + GitHub Pages</a>
+    </li>
+    </ul>
                 </li>
               </ul>
       </div>
@@ -57,7 +95,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Phpmyadmin</li>
+      <li class="breadcrumb-item active">Pràctica</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
