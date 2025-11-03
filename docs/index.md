@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+## Pràctica phpmyadmin de Fran a GitHub Pages
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Al menú de navegació es pot accedir al fitxer.
 
-## Commands
+### Passos a fer
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* `Instal·lació de PhpMyAdmin`
+* `Permetre l’Accés per Contrasenya del root de MySQL`
+* `Configuració de l’Accés per Contrasenya per a un Usuari Dedicat de MySQL `
+* `Assegura la Instància de phpMyAdmin `
+* `Repositori de GitHub + GitHub Pages` 
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
