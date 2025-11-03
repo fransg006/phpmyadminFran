@@ -93,7 +93,9 @@ Dins de docs es troben els fitxers markdown i les imatges.
 ![Imatge](IMG/14.png)
 
 Després per a pujar els canvis a GitHub Pages i així tindre un lloc web, he fet el seguent, i es pot veure al seguent enllaç 
-[Enllaç a GitHub Pages]()
+![Imatge](IMG/15.png)
+![Imatge](IMG/16.png)
+[Enllaç a GitHub Pages](https://fransg006.github.io/phpmyadminFran/)
 
 
 --- 
