@@ -1,4 +1,6 @@
 site_name: Fran phpmyadmin
+theme:
+  name: readthedocs
 
 nav:
- - "Pràctica": docs/phpmyadmin.md
+ - "Pràctica": Phpmyadmin.md
